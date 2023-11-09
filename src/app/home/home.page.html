@@ -1,10 +1,8 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,8 +11,173 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Muna</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container welcome-contd">
+      <img
+        src="../assets/engage.jpg"
+        alt="anything"
+        class="img-fluid back-img"
+      />
+      <div class="welcome">
+        <h1>Hi, I am Munachi.</h1>
+        <h3>This is my first Angular App.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container-fluid main-about" id="about">
+      <h2 class="text-center">About</h2>
+      <p>
+        A gradute who is willing to enhance my knowledge and capabilities by
+        working in a dynamic organization that prides itself in giving
+        substantial responsibilities to new talent. I am dedicated to continuous
+        learning and keeping up-to-date with the latest technology trends, which
+        enables me to bring fresh ideas and strategic insights to every project.
+        I am excited about the opportunity to apply my knowledge to contribute
+        to the growth of innovative projects at this company.
+      </p>
+    </div>
+    <div id="skill">
+      <h4><u>SKILLS</u></h4>
+      <p>HTML</p>
+      <div id="mySkill">
+        <div class="htm">70%</div>
+      </div>
+      <p>CSS</p>
+      <div id="mySkill">
+        <div class="css">60%</div>
+      </div>
+      <p>JAVASCRIPT</p>
+      <div id="mySkill">
+        <div class="javascript">30%</div>
+      </div>
+    </div>
+    <div class="card bg-body-tertiary text-center mt-3 mb-3" id="education">
+      <div class="card-title">
+        <h3>EDUCATION</h3>
+      </div>
+      <div class="card-body">
+        <p>
+          2017 - 2021 <span class="vl"></span> Biochemistry
+          <span class="vl"></span>
+          Chukwuemeka Odumegwu Ojukwu University
+        </p>
+        <p style="margin-bottom: 80px">
+          2011 - 2017 <span class="vl"></span> Secondary School
+          <span class="vl"></span>
+          Command Secondary School Ipaja Lagos
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid" id="contact">
+      <h3 class="mb-3 mt-3">CONTACT ME</h3>
+      <form
+        (ngSubmit)="submit()"
+        class="form-group"
+        action="#"
+        target="_blank"
+        method="post"
+      >
+        <input
+          type="text"
+          name="user"
+          class="form-control"
+          placeholder="Enter Your name..."
+          required
+          [(ngModel)]="userData.user"
+        /><br />
+        <input
+          type="tel"
+          name="number"
+          class="form-control"
+          placeholder="Enter your phone number..."
+          required
+          ngModel
+        /><br />
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Enter your Email..."
+          required
+          ngModel
+        /><br />
+        <textarea
+          class="form-control"
+          name="text"
+          placeholder="Enter your Message..."
+          required
+          ngModel
+        ></textarea
+        ><br />
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
   </div>
 </ion-content>

@@ -25,3 +25,120 @@
 #container a {
   text-decoration: none;
 }
+
+.back-img {
+  z-index: -5;
+  width: 50vw;
+  height: 100vh;
+}
+
+h1 {
+  transition: 2s;
+  color: white;
+}
+
+.welcome {
+  width: 30vw;
+  z-index: 2;
+  position: absolute;
+  top: 50vh;
+  color: white;
+}
+
+.welcome-contd {
+  margin: 0;
+  position: fixed;
+  padding: 0;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50vw;
+  margin-left: 3vw;
+}
+
+.main-about {
+  width: 30vw;
+  margin-top: 15vh;
+}
+
+#mySkill {
+  width: 80%;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.htm {
+  width: 70%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  /* animation: htm 4s 5s forwards; */
+}
+
+/* @keyframes htm {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 85%;
+    background-color: black;
+  }
+} */
+
+.css {
+  width: 60%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: css 4s 5.5s forwards;
+}
+
+/* @keyframes css {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 75%;
+    background-color: black;
+  }
+} */
+
+.javascript {
+  width: 30%;
+  counter-reset: my-counter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: javascript 4s 6s forwards;
+}
+
+/* @keyframes javascript {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 70%;
+    background-color: black;
+  }
+} */
+
+.vl {
+  border-left: 2px solid black;
+  height: 10px;
+  padding-right: 10px;
+}
